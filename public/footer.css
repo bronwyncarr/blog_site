@@ -1,0 +1,68 @@
+/*Footer section*/
+/*all this background colour regardless of width*/
+#contact {
+  background-color: #1d3d63; }
+  #contact h2 {
+    color: white; }
+  #contact #email-contact {
+    overflow: hidden; }
+  #contact .hide {
+    height: 0; }
+  #contact #email-contact-form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 20px 50px; }
+    #contact #email-contact-form input,
+    #contact #email-contact-form textarea,
+    #contact #email-contact-form button {
+      margin-bottom: 10px; }
+      @media only screen and (min-width: 700px) {
+        #contact #email-contact-form input,
+        #contact #email-contact-form textarea,
+        #contact #email-contact-form button {
+          margin: 20px; } }
+    #contact #email-contact-form input,
+    #contact #email-contact-form textarea {
+      height: 30px;
+      width: 100%; }
+      @media only screen and (min-width: 700px) {
+        #contact #email-contact-form input,
+        #contact #email-contact-form textarea {
+          width: 500px;
+          height: 30px; } }
+    #contact #email-contact-form textarea {
+      height: 200px;
+      width: 100%; }
+      @media only screen and (min-width: 700px) {
+        #contact #email-contact-form textarea {
+          height: 200px;
+          width: 500px; } }
+    #contact #email-contact-form button {
+      background-color: white;
+      border: 2px solid white;
+      /*even though not visual prevents size changing when :hover. Other option is to make it 2px larger and no border*/
+      color: #1d3d63; }
+    #contact #email-contact-form button:hover {
+      border: 2px solid white;
+      background-color: #1d3d63;
+      color: white; }
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 3rem; }
+  .icons i.fas,
+  .icons i.fab {
+    margin: 10px 5px;
+    color: white; }
+  .icons i.fas:hover,
+  .icons i.fab:hover {
+    color: #7a7a7a; }
+
+/*# sourceMappingURL=footer.css.map */

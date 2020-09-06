@@ -1,0 +1,377 @@
+/* Global */
+/* Remove browsers defaults*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  font-family: "Raleway"," Roboto", sans-serif;
+  font-size: 16px;
+  background: whitesmoke;
+  color: #383e44; }
+
+/* Text size Mobile and tablet >800px*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Raleway"," Roboto", sans-serif; }
+
+p {
+  line-height: 1.5; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 3.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+p {
+  font-size: 1rem; }
+
+/* Text size Desktop >800px*/
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 6rem; }
+
+  h2 {
+    font-size: 4rem; }
+
+  h3 {
+    font-size: 3rem; }
+
+  h4 {
+    font-size: 1.6rem; }
+
+  p {
+    font-size: 1.2rem; } }
+cite {
+  font-style: italic; }
+
+/* Container component */
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px; }
+
+button {
+  /*even though not visual prevents size changing when :hover. Other option is to make it 2px larger and no border*/
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 auto; }
+
+/* h2 title of each section */
+.section-title {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  text-align: center; }
+
+/*heading more spaced out on larger screen*/
+@media only screen and (min-width: 1000px) {
+  .section-title {
+    padding-top: 5rem;
+    padding-bottom: 3rem; } }
+/* Re-used components */
+/*Footer section*/
+/*all this background colour regardless of width*/
+#contact {
+  background-color: #1d3d63; }
+  #contact h2 {
+    color: white; }
+  #contact #email-contact {
+    overflow: hidden; }
+  #contact .hide {
+    height: 0; }
+  #contact #email-contact-form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 20px 50px; }
+    #contact #email-contact-form input,
+    #contact #email-contact-form textarea,
+    #contact #email-contact-form button {
+      margin-bottom: 10px; }
+      @media only screen and (min-width: 700px) {
+        #contact #email-contact-form input,
+        #contact #email-contact-form textarea,
+        #contact #email-contact-form button {
+          margin: 20px; } }
+    #contact #email-contact-form input,
+    #contact #email-contact-form textarea {
+      height: 30px;
+      width: 100%; }
+      @media only screen and (min-width: 700px) {
+        #contact #email-contact-form input,
+        #contact #email-contact-form textarea {
+          width: 500px;
+          height: 30px; } }
+    #contact #email-contact-form textarea {
+      height: 200px;
+      width: 100%; }
+      @media only screen and (min-width: 700px) {
+        #contact #email-contact-form textarea {
+          height: 200px;
+          width: 500px; } }
+    #contact #email-contact-form button {
+      background-color: white;
+      border: 2px solid white;
+      /*even though not visual prevents size changing when :hover. Other option is to make it 2px larger and no border*/
+      color: #1d3d63; }
+    #contact #email-contact-form button:hover {
+      border: 2px solid white;
+      background-color: #1d3d63;
+      color: white; }
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 3rem; }
+  .icons i.fas,
+  .icons i.fab {
+    margin: 10px 5px;
+    color: white; }
+  .icons i.fas:hover,
+  .icons i.fab:hover {
+    color: #7a7a7a; }
+
+/* Components for index.html */
+/*nav Styling*/
+/*stretches full width*/
+/*links centered on mobile view*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #7a7a7a;
+  z-index: 1;
+  /*banner img will be underneath*/
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  /*links positioned to the right on desktop view*/
+  /*Nav links*/
+  /*changes color and background color on hover*/ }
+  @media only screen and (min-width: 800px) {
+    nav {
+      justify-content: flex-end; } }
+  nav a {
+    padding: 10px 10px;
+    /*used instead of margin to allow more of the background color to change on hover*/
+    color: white;
+    font-size: 1rem;
+    /*Reduce text size of nav so it can all fit across a mobile screen*/ }
+    @media only screen and (min-width: 700px) {
+      nav a {
+        font-size: 2rem; } }
+  nav a:hover {
+    background-color: white;
+    color: #1d3d63; }
+
+/*whole banner section*/
+/*all this background colour regardless of width*/
+#banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  /*Full screen, height scales to viewport height and width zomms accordingly.*/
+  /*Intentionally under nav so banner text is cetnered on whole page. */
+  /*centered on page*/ }
+  #banner img {
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    /*stops sneaky white space below*/
+    width: 100%; }
+  #banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 100%;
+    /*Accent the name*/ }
+    #banner .banner-text span {
+      color: darkblue; }
+
+/* Animation for banner section on desktop (>1000px) only. */
+@media only screen and (min-width: 1000px) {
+  #banner {
+    animation-name: screen-slide;
+    animation-duration: 2s; }
+
+  @keyframes screen-slide {
+    0% {
+      margin-right: 100%;
+      width: 300%; }
+    100% {
+      margin-right: 0%;
+      width: 100%; } } }
+/*whole about me section*/
+/*all this background colour regardless of width*/
+#about {
+  background-color: white;
+  /*Block or Column display on Mobile screen*/ }
+  #about .bio {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    /*Displayed inline on desktop*/ }
+    @media only screen and (min-width: 1100px) {
+      #about .bio {
+        flex-direction: row;
+        padding-bottom: 5rem; } }
+    #about .bio .left {
+      display: flex;
+      justify-content: center;
+      /*Left 30% contains img, right 70% contains text and resume button*/
+      /*About me img styling*/ }
+      @media only screen and (min-width: 1100px) {
+        #about .bio .left {
+          width: 30%;
+          margin: 1rem; } }
+      #about .bio .left img {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%; }
+        @media only screen and (min-width: 1100px) {
+          #about .bio .left img {
+            height: 280px;
+            width: 280px; } }
+    #about .bio .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /*Left 30% contains img, right 70% contains text and resume button*/
+      /*Button styling*/ }
+      @media only screen and (min-width: 1100px) {
+        #about .bio .right {
+          width: 70%;
+          margin: 1rem;
+          align-items: center;
+          justify-content: space-around; } }
+      #about .bio .right p {
+        margin: 20px; }
+      #about .bio .right button {
+        background-color: #1d3d63;
+        border: 2px solid #1d3d63;
+        /*even though not visual prevents size changing when :hover. Other option is to make it 2px larger and no border*/
+        color: white; }
+      #about .bio .right button:hover {
+        border: 2px solid #1d3d63;
+        background-color: white;
+        color: #1d3d63; }
+
+/*whole blog section*/
+/*all this background colour regardless of width*/
+#blog {
+  background-color: #ebeef2; }
+  #blog .blogs {
+    display: flex;
+    flex-wrap: wrap;
+    /*blog sample card. includes img, title and first few sentances*/
+    /*interactive card size increases without distrupting neighour on hover*/ }
+    #blog .blogs .post {
+      width: 17rem;
+      height: 26rem;
+      background-color: white;
+      margin: 1rem;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+      @media only screen and (min-width: 800px) {
+        #blog .blogs .post {
+          width: 20rem;
+          height: 34rem;
+          margin: 2rem; } }
+      #blog .blogs .post img {
+        width: 100%;
+        height: auto; }
+      #blog .blogs .post .post-text {
+        padding: 1rem;
+        max-width: 14rem; }
+        #blog .blogs .post .post-text h4 {
+          color: #1d3d63;
+          padding-bottom: 0.3rem; }
+        #blog .blogs .post .post-text time, #blog .blogs .post .post-text p {
+          color: #383e44; }
+    #blog .blogs .post:hover {
+      width: 19rem;
+      height: 28rem;
+      margin: 0rem; }
+      @media only screen and (min-width: 800px) {
+        #blog .blogs .post:hover {
+          width: 22rem;
+          height: 36rem;
+          margin: 1rem; } }
+
+/* Components from blog */
+/*Enitre blog post page*/
+/*Designed to be simple with emphasis on easy to read*/
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; }
+  .content h1,
+  .content h2 {
+    text-align: center; }
+  .content .entire-post {
+    margin: 20px;
+    /*Img and text displayed inline with text wrap around img on desktop screen*/ }
+    @media only screen and (min-width: 700px) {
+      .content .entire-post {
+        margin: 50px; } }
+    .content .entire-post figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /*Img and text displayed in block or column on mobile screen*/ }
+      .content .entire-post figure img {
+        max-width: 250px;
+        max-height: 250px; }
+      @media only screen and (min-width: 700px) {
+        .content .entire-post figure {
+          float: left;
+          margin-right: 20px; } }
+      .content .entire-post figure img {
+        width: 320px;
+        height: 320px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+/* Global */
+@import "./global.scss";
+
+/* Re-used components */
+@import "./footer.scss";
+
+/* Components for index.html */
+@import "./nav.scss";
+@import "./banner.scss";
+@import "./about.scss";
+@import "./blog.scss";
+
+/* Components from blog */
+@import "./post.scss";

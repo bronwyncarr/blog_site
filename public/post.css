@@ -1,0 +1,33 @@
+/*Enitre blog post page*/
+/*Designed to be simple with emphasis on easy to read*/
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; }
+  .content h1,
+  .content h2 {
+    text-align: center; }
+  .content .entire-post {
+    margin: 20px;
+    /*Img and text displayed inline with text wrap around img on desktop screen*/ }
+    @media only screen and (min-width: 700px) {
+      .content .entire-post {
+        margin: 50px; } }
+    .content .entire-post figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /*Img and text displayed in block or column on mobile screen*/ }
+      .content .entire-post figure img {
+        max-width: 250px;
+        max-height: 250px; }
+      @media only screen and (min-width: 700px) {
+        .content .entire-post figure {
+          float: left;
+          margin-right: 20px; } }
+      .content .entire-post figure img {
+        width: 320px;
+        height: 320px; }
+
+/*# sourceMappingURL=post.css.map */

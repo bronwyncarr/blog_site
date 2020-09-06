@@ -1,0 +1,77 @@
+/*whole about me section*/
+/*all this background colour regardless of width*/
+#about {
+  background-color: white;
+
+  /*Block or Column display on Mobile screen*/
+  .bio {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+    /*Displayed inline on desktop*/
+    @media only screen and (min-width: 1100px) {
+      flex-direction: row;
+      padding-bottom: 5rem;
+    }
+  
+    .left {
+      display: flex;
+      justify-content: center;
+
+      /*Left 30% contains img, right 70% contains text and resume button*/
+      @media only screen and (min-width: 1100px) {
+        width: 30%;
+        margin: 1rem;
+      }
+
+      /*About me img styling*/
+      img {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+
+        @media only screen and (min-width: 1100px) {
+          height: 280px;
+          width: 280px;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /*Left 30% contains img, right 70% contains text and resume button*/
+      @media only screen and (min-width: 1100px) {
+        width: 70%;
+        margin: 1rem;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      p {
+        margin: 20px;
+      }
+
+      /*Button styling*/
+      button {
+        background-color: #1d3d63;
+        border: 2px solid #1d3d63; /*even though not visual prevents size changing when :hover. Other option is to make it 2px larger and no border*/
+        color: white;
+      }
+
+      button:hover {
+        border: 2px solid #1d3d63;
+        background-color: white;
+        color: #1d3d63;
+      }
+    }
+  }
+}
+
+
+
+  
+        

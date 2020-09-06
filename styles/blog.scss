@@ -1,0 +1,59 @@
+/*whole blog section*/
+/*all this background colour regardless of width*/
+#blog {
+  background-color: #ebeef2;
+
+  .blogs {
+    display: flex;
+    flex-wrap: wrap;
+
+    /*blog sample card. includes img, title and first few sentances*/
+    .post {
+      width: 17rem;
+      height: 26rem;
+      background-color: white;
+      margin: 1rem;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+      @media only screen and (min-width: 800px) {
+          width: 20rem;
+          height: 34rem;
+          margin: 2rem;
+        }
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .post-text {
+        padding: 1rem;
+        max-width: 14rem;
+
+        h4 {
+          color: #1d3d63;
+          padding-bottom: 0.3rem;
+        }
+
+        time, p {
+          color: #383e44
+        }
+      }
+    }
+
+    /*interactive card size increases without distrupting neighour on hover*/
+    .post:hover {
+      width: 19rem;
+      height: 28rem;
+      margin: 0rem;
+
+      @media only screen and (min-width: 800px) {
+        width: 22rem;
+        height: 36rem;
+        margin: 1rem;
+      }
+    }
+  }
+}
+

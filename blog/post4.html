@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bronwyn Carr">
+  <meta name="description" content="Bronwyn Carr. Full stack developer based in Melbourne.">
+  <title>Blog Post 1</title>
+  <link rel="stylesheet" href="./../public/style.css" intergrity="sha512-ev29jwifhNXW8LfCVVAUAbXSH88NL+Kv0gJ49Y1ew2YDxKsFp4BnCNG0mhSlgGVtQ7wmmPHGqnVoMthhr4PM7Q==">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Montserrat&family=Roboto&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0053558a29.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <!-- Nav Bar consistant with index.html including links back to index.html sections-->
+    <nav>
+      <a href="./../index.html#home">Home</a>
+      <a href="./../index.html#about">About</a>
+      <a href="./../index.html#blog">Blog</a>
+      <a href="./../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <div class="container content">
+      <h1>Blog Post #4</h1>
+      <h2>Pirate Ipsum</h2>
+      <div class="entire-post">
+        <figure>
+          <img src="./../img/pirate350x350.png" alt="Pirate">
+          <figcaption>BLog 4 on Pirates</figcaption>
+        </figure>
+        <p>Nipperkin transom Pieces of Eight belaying pin knave yard provost bilge rat Corsair spyglass. Barque hearties
+          square-rigged stern boom barkadeer list Barbary Coast to go on account flogging. Topsail case shot fore rum
+          Sea Legs jolly boat grog blossom gangway brigantine reef. Rope's end Cat o'nine tails blow the man down maroon
+          scuppers gally fluke nipperkin Blimey gabion. Yard shrouds haul wind broadside scuppers prow topgallant
+          carouser long clothes blow the man down. Scuppers quarter clap of thunder topgallant lugger hang the jib
+          hornswaggle barkadeer chase guns maroon.</p>
+        <br>
+        <p>Scallywag walk the plank splice the main brace sheet yard transom stern belay chase capstan. Strike colors
+          measured fer yer chains boatswain wherry American Main topmast sutler ballast knave wench. Chase strike colors
+          gangplank run a shot across the bow fluke fire ship lass lateen sail bilge heave to.</p>
+        <br>
+        <p>Scurvy code of conduct brigantine scuppers hempen halter Pirate Round shrouds landlubber or just lubber
+          measured fer yer chains weigh anchor. Grapple Shiver me timbers hulk black jack lee sheet handsomely hang the
+          jib hands Sea Legs. Yard Jack Ketch plunder avast to go on account mizzenmast rutters cable belaying pin
+          measured fer yer chains. Plunder stern interloper squiffy coxswain sheet chase guns hogshead bilged on her
+          anchor scallywag. Prow me
+          bowsprit Yellow Jack cable flogging chantey code of conduct sloop black spot. Rum Davy Jones' Locker loot
+          carouser matey dead men tell no tales rigging long boat gangway yo-ho-ho.</p>
+      </div>
+    </div>
+</main>
+  <!-- Contact footer containing heading and 4x contact links with icons shown on every page. -->
+  <!-- Email contact link brings up form. -->
+  <footer id="contact">
+    <h2 class="section-title">Let's Chat</h2>
+    <!-- Form which is normally hidden that appears when user clicks email/letter icon. -->
+    <div id="email-contact" class="hide" style="overflow: hidden;">
+      <form id="email-contact-form" method="POST" action="https://formspree.io/xnqgkweb">
+        <input type="text" id="name" name="_replyto" aria-labelledby="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" aria-labelledby="email" placeholder="Email">
+        <textarea name="message" id="message" aria-labelledby="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!-- Contact icons always shown. -->
+    <div class="icons">
+      <a target="_blank" rel="noopener" href="https://github.com/V1rotate" aria-label="github"><i aria-hidden="true"
+          class="fab fa-github fa-3x"></i></a>
+      <a target="_blank" rel="noopener"
+        href="https://au.linkedin.com/in/bronwyn-carr-3aa16b1b5?trk=people-guest_people_search-card"
+        aria-label="linkedin"><i aria-hidden="true" class="fab fa-linkedin fa-3x"></i></a>
+      <a target="_blank" rel="noopener" href="https://twitter.com/bronwyn_a_carr" aria-label="twitter"><i
+          aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
+      <a href="#about" id="email-icon"  rel="noopener" aria-label="email"><i aria-hidden="true"
+          class="fas fa-envelope fa-3x"></i></a>
+    </div>
+  </footer>
+  <script src="./../script.js"></script>
+</body>
+
+</html>

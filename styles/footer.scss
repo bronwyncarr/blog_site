@@ -1,0 +1,89 @@
+/*Footer section*/
+/*all this background colour regardless of width*/
+#contact {
+  background-color: #1d3d63;
+
+  h2 {
+    color: white;
+  }
+
+  #email-contact {
+    overflow: hidden;
+  }
+  
+  .hide {
+    height: 0;
+  }
+
+  #email-contact-form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 20px 50px;
+
+    input,
+    textarea,
+    button {
+      margin-bottom: 10px;
+
+      @media only screen and (min-width: 700px) {
+        margin: 20px;
+      }
+    }
+
+    input,
+    textarea {
+      height: 30px;
+      width: 100%;
+
+      @media only screen and (min-width: 700px) {
+        width: 500px;
+        height: 30px;
+      }
+    }
+
+    textarea {
+      height: 200px;
+      width: 100%;
+
+      @media only screen and (min-width: 700px) {
+        height: 200px;
+        width: 500px;
+      }
+    }
+
+    button {
+      background-color: white;
+      border: 2px solid white; /*even though not visual prevents size changing when :hover. Other option is to make it 2px larger and no border*/
+      color: #1d3d63;
+    }
+
+    button:hover {
+      border: 2px solid white;
+      background-color: #1d3d63;
+      color: white;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+
+  i.fas,
+  i.fab {
+    margin: 10px 5px;
+    color: white;
+  }
+
+  i.fas:hover,
+  i.fab:hover {
+    color: rgb(122, 122, 122);
+  }
+}
